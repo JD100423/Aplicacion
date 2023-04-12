@@ -17,7 +17,7 @@ form.addEventListener('submit', async (event) => {
     }
 
     localStorage.setItem('user', JSON.stringify(user));
-    window.location.href = '../screens/index.html';
+    window.location.href = '../productos.html';
   } catch (error) {
     console.error(error);
     alert(error.message);
