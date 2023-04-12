@@ -41,7 +41,6 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    margin: 0 auto;
     gap: 16px;
 }
 
@@ -123,7 +122,21 @@ p {
     margin: 8px 0px 8px 0px;
 }
 
-@media screen and(max-width:768px) {
+@media (max-width:768px) {
+
+    .logo-search {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-search input {
+        width: 272px;
+        padding: 0;
+    }
+
+    .movile {
+        display: none;
+    }
     .destaque {
         background-size: 118vh;
     }
@@ -138,13 +151,73 @@ p {
     }
 
     .general-prods {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 32px;
-        gap: 16px;
+        flex: none;
+        order: 2;
+        align-self: stretch;
+        flex-grow: 0;
     }
 
-    
+    .titulo-prod {
+        flex-direction: row;
+        gap: 450px;
+        padding: 0px;
+    }
 
+    .main-productos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        gap: 16px;
+    }
+}
+
+@media (max-width:360px) {
+    header {
+        width: 100%;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .logo-search input{
+        display: none;
+    }
+
+    .movile{
+        display: flex;
+    }
+
+    .movile img{
+        width: 17.05px;
+    }
+
+    .destaque {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0;
+    }
+
+    .banner {
+        gap: 8px;
+    }
+
+    .general-prods {
+        align-items: flex-start;
+        padding: 16px
+    }
+
+    .titulo-prod {
+        gap: 30px;
+    }
+
+    .login{
+        box-sizing: border-box;
+    }
+    
 }

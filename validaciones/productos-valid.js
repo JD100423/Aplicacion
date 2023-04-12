@@ -24,7 +24,7 @@ const nuevoProducto = (nombre, precio, imageUrl, id, categoria) => {
 productoServices.listaProductos()
     .then(async respuesta => {
         try {
-            await respuesta.slice(0,18).forEach(({ nombre, precio, categoria, imageUrl, id }) => {
+            await respuesta.forEach(({ nombre, precio, categoria, imageUrl, id }) => {
                 const nuevaLinea = nuevoProducto(nombre, precio, imageUrl, id, categoria);
 
                 switch (categoria) {
