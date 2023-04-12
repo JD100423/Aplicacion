@@ -24,6 +24,6 @@ formulario.addEventListener("submit", (evento) => {
     evento.preventDefault();
 
     productoServices.alterarProducto (id, inputNombre.value, inputPrecio.value, inputDescription.value, inputCategoria.value).then(() => {
-        window.location.href = "../screens/productos.html";
+        window.location.href = "../screens/index.html";
     });
 });

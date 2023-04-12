@@ -153,11 +153,6 @@ nav {
 }
 
 .link-utilities {
-    /* display: flex;
-    flex-direction: column;
-    line-height: 40px;
-    width: 200px;
-    margin-right: 100px;*/
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -249,4 +244,58 @@ footer {
     font-size: 10px;
     line-height: 15px;
     text-align: center;
+}
+
+@media screen and(max-width:768px) {
+    header{
+        padding: 20px;
+    }
+
+    .logo-search{
+        width: 100%;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .logo-search input {
+        margin-left: 0;
+        margin-top: 16px;
+        width: 100%;
+        background-position-x: 95%;
+    }
+
+    .login {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contacto {
+        padding: 32px;
+        gap: 32px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .referencia{
+        width: 100%;
+        margin-top: 16px;
+        justify-content: center;
+    }
+
+    .link-utilities {
+        padding: 0;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .form {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 16px;
+    }
 }
