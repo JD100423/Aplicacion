@@ -180,7 +180,7 @@ nav {
 }
 
 .form input {
-    width: 475px;
+    width: 100%;
     position: relative;
     height: 56px;
     border: transparent;
@@ -246,56 +246,109 @@ footer {
     text-align: center;
 }
 
-@media screen and(max-width:768px) {
-    header{
-        padding: 20px;
-    }
+@media (max-width: 768px) {
 
-    .logo-search{
-        width: 100%;
-        flex-direction: column;
-        gap: 16px;
-        align-items: center;
+    header {
+      padding: 15px; 
     }
-
+  
+    .logo-search {
+      width: 100%;
+      flex-direction: row; 
+      align-items: flex-start; 
+    }
+  
     .logo-search input {
-        margin-left: 0;
-        margin-top: 16px;
-        width: 100%;
-        background-position-x: 95%;
+      margin-top: 10px; 
+      margin-left: 0; 
+      width: 100%; 
+      background-position-x: right 16px; 
     }
-
+  
     .login {
-        width: 100%;
-        justify-content: center;
+      width: 100%; 
+      justify-content: center; 
     }
 
     .contacto {
-        padding: 32px;
-        gap: 32px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .referencia{
         width: 100%;
-        margin-top: 16px;
         justify-content: center;
-    }
-
-    .link-utilities {
         padding: 0;
-        align-items: center;
-        gap: 16px;
+        gap: 0;
     }
 
-    .form {
+    .tablet{
         width: 100%;
-        margin-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+    .form {
+      width: 50%; 
     }
 
+    .form input {
+        width: 95%;
+    }
+  
+    .label-nombre {
+      top: 72px;
+      font-size: 14px; 
+    }
+  
     footer {
+      flex-direction: column; 
+      align-items: center; 
+      width: 96%;
+    }
+  }
+
+@media (max-width: 360px) {
+
+    header {
+        padding: 10px;
+    }
+
+    .logo-search {
         flex-direction: column;
-        gap: 16px;
+    }
+
+    .logo img {
+        height: 25px;
+        width: 34px;
+    }
+
+    .logo p {
+        font-size: 18px;
+    }
+
+    .logo-search input {
+        background-position-x: 280px;
+    }
+
+    .login button {
+        height: 40px;
+    }
+
+    .referencia img {
+        height: 25px;
+        width: 34px;
+    }
+
+    .referencia p {
+        font-size: 18px;
+    }
+
+    .link-utilities a {
+        font-size: 14px;
+    }
+
+    .form p {
+        font-size: 14px;
+    }
+
+    .form input {
+        height: 48px;
     }
 }
