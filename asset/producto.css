@@ -85,3 +85,29 @@ img {
 h1, p {
     margin: 8px 0px 8px 0px;
 }
+
+@media (max-width:768){
+
+    header {
+        padding: 16px 32px;
+    }
+    
+    .logo-search {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-search input {
+        width: 272px;
+        padding: 0;
+    }
+
+    .movile {
+        display: none;
+    }
+
+    .products-title {
+        
+    }
+    
+}

@@ -51,6 +51,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 10px;
+
 }
 
 .titulo-prod {
@@ -82,7 +83,7 @@
 }
 
 .producto {
-    display: flex;
+   display: flex;
     flex-direction: column;
     margin-bottom: 25px;
     align-items: flex-start;
@@ -107,6 +108,10 @@
     font-size: 16px;
 }
 
+
+.movile {
+    display: none;
+}
 .ver-producto {
     font-weight: bold;
     font-size: 16px;
@@ -151,10 +156,7 @@ p {
     }
 
     .general-prods {
-        flex: none;
-        order: 2;
-        align-self: stretch;
-        flex-grow: 0;
+        display: flex;
     }
 
     .titulo-prod {
@@ -163,12 +165,24 @@ p {
         padding: 0px;
     }
 
-    .main-productos {
-        display: flex;
+    .mostrar-mas {
+        padding: 0;
+    }
+
+    .ver-todo {
         flex-direction: row;
         align-items: center;
+    }
+
+    .main-productos {
+        flex-direction: row;
+        justify-content: flex-start;
         padding: 0;
-        gap: 16px;
+
+    }
+
+    .producto {
+        padding: 3px;
     }
 }
 
@@ -208,8 +222,14 @@ p {
     }
 
     .general-prods {
+        flex-direction: column;
         align-items: flex-start;
         padding: 16px
+    }
+
+    .producto {
+        padding: 0;
+        gap: 0;
     }
 
     .titulo-prod {
