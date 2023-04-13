@@ -122,16 +122,24 @@ nav {
 .contacto {
     background-color: var(--bg-contacto);
     display: flex;
+    flex-direction: row;
+    align-items: center;
     height: 365px;
     justify-content: center;
     padding: 64px;
     gap: 64px;
 }
 
+.computer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
 .referencia {
     display: flex;
     width: 350px;
-    margin: 20px 0 0 0;
+    margin: 0px 0 0 0;
+    margin-left: 25px;
 }
 
 .referencia img {
